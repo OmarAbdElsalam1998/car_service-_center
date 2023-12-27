@@ -575,7 +575,7 @@ header .main-banner .content h1{
     margin-bottom: 40px;
 }
 header .main-banner .content span{
-    color: var(--secondary-color);
+    color: #fbba5e;
     font-family:"NotoKufiArabic-Bold",sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -655,9 +655,9 @@ header video{
 
 
 
-/*Start Free Services*/
+/*Start our Features*/
 .our-features{
-    padding: 120px 0 ;
+    padding: 80px 0 ;
     overflow: hidden;
     font-family:"NotoKufiArabic-Medium",sans-serif;
     background-color: #FBFBFB;
@@ -665,6 +665,11 @@ header video{
     background-size: cover;
     background-attachment: fixed;
 
+}
+@media (max-width:767px) {
+    .our-features{
+        padding: 40px 0 ;
+    }
 }
 .our-features h2{
     font-size: 55px;
@@ -684,14 +689,14 @@ header video{
         border-radius: 16px;
         height: 200px;
         overflow: hidden;
-        background-color: var(--brand-color);
+        background-color: var(--third-color);
         display: flex;
         align-items:center ;
         justify-content: center;
         margin-bottom: 25px;
         transition: all .4s ease-in-out;
         user-select: none;
-        color: #FFF;
+        color: var(--brand-color);
     
     
       }
@@ -712,7 +717,7 @@ header video{
         content: "";
         position: absolute;
         width: 47%;
-        height: 168%;
+        height: 200%;
         background:var(--secondary-color)   ;
         transform-origin: center;
        
@@ -726,7 +731,7 @@ header video{
       .our-features .box::after{
         content: "";
         position: absolute;
-        background-color: var(--brand-color);
+        background-color: var(--third-color);
         inset: 3px;
         border-radius: 14px;
         transition: all .4s ease-in-out;
@@ -838,17 +843,24 @@ header video{
 /* Start our-services Style */
 .our-services{
 
-    padding: 120px 0 ;
-    background-color: var(--brand-color);
+    padding: 80px 0 ;
+    background-color: #FFF;
     overflow: hidden;
 
 }
 @media (max-width:767px) {
     .our-services{
-        padding: 70px 0 ;
+        padding: 40px 0 ;
     }
 }
+.our-services .special-heading{
+    color: var(--brand-color);
+    
+}
+.our-services .special-heading::before{
+    background-color: var(--brand-color);
 
+}
 .our-services h2{
     margin-bottom: 30px;
 }
@@ -860,19 +872,17 @@ header video{
 }
 
 .our-services .service{
-    background-color: var(--brand-color);
     padding:  10px;
     border-radius: 16px;
-    border: 1px solid var(--secondary-color);
+    
 
-    box-shadow: 0 0 15px #4652f59c;
+    box-shadow: 0 0 12px #4652f59c;
     position: relative;
 }
 .our-services .service .service-image img{
     height: 300px;
     border-radius: 12px;
     object-fit: cover;
-    opacity: .5;
 }
 .our-services .service .service-name{
     position: absolute;
@@ -882,7 +892,7 @@ header video{
     padding: 20px;
     width: 80%;
     margin: auto;
-    background: #4652f542;
+    background: #4652f57c;
     backdrop-filter: blur(20px);
     border-radius: 12px 12px 0 0;
     color: #FFF;
@@ -915,7 +925,7 @@ header video{
 
 /* Start Footer Section */
 footer#footer{
-    padding: 120px 0;
+    padding: 80px 0;
     background-color: var(--brand-color);
     background-color: var(--brand-color);
     background-size: cover  ;
@@ -931,7 +941,7 @@ footer#footer{
 }
 @media (max-width:767px) {
     footer{
-        padding: 70px 0 ;
+        padding: 40px 0 ;
         
     }
 }
