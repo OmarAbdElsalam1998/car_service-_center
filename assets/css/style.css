@@ -216,7 +216,7 @@ body{
 
 header#header{
     height: 100vh;
-    min-height:700px;
+    min-height:600px;
     position: relative;
     overflow: hidden;
     background-image:linear-gradient(2deg,#191c2f 0%,#191c2fc7 100%),url(../images/main_banner.webp);
@@ -389,7 +389,7 @@ header .wave.wave4{
 
 header .scroll-down{
     position: absolute;
-    bottom: 100px;
+    bottom: 40px;
     left: 50%;
     transform: translate(-50%);
     width: 30px;
@@ -875,8 +875,8 @@ header video{
     padding:  10px;
     border-radius: 16px;
     
-
-    box-shadow: 0 0 12px #4652f59c;
+    border:1px solid #dfdfe5;
+    /* box-shadow: 0 0 12px #4652f59c; */
     position: relative;
 }
 .our-services .service .service-image img{
